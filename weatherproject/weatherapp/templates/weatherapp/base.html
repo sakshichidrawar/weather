@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEATHER</title>
+  <link rel="stylesheet" href="{% static 'weatherapp/css/bootstrap.css' %}">
+</head>
+<body style="background-color:skyblue" >
+  </form>
+  <div class ="container mt-5">
+    
+    <h2 class="alert alert-success" role="alert" align="center">CHECK WEATHER HERE</h2>
+    <nav class="navbar bg-light" align="centre">
+      <div class="container-fluid">
+        <form class="d-flex" role="search">
+          <input id="city" class="form-control me-2" type="search" placeholder="Enter city name" aria-label="Search" align="centre">
+          <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <h4 class="alert alert-success" role="alert" align="center">Weather for <span id="cityName"></span></h4>
+
+    <div class="container">
+      <main>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">TEMPRATURE</h4>
+              </div>
+              <div class="card-body">
+                <img alt="" style="width: 251.8px; height: 167.9px; margin-top: 6.1px; margin-left: 0px;" class="" src="https://tse2.mm.bing.net/th?id=OIP.1ab4b9bjrOnWOdasqeuTEQHaE8&amp;pid=Api&amp;P=0" id="yui_3_5_1_1_1671109852817_643">
+
+                <h1 class="card-title pricing-card-title"><span id=""></span>℃</h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>cloud pct is<span id="cloud_pct"></span></li>
+                  <li>Temprature is<span id="temp"></span>℃</li>
+                  <li>feels like is<span id="feels_like"></span>℃</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">HUMIDITY</h4>
+              </div>
+              <div class="card-body">
+                <img alt="" style="width: 235px; height: 156.7px; margin-top: 11.7px; margin-left: 0px;" class="" src="https://tse4.mm.bing.net/th?id=OIP.UCIg5fNfP5RIvPlwpr6mggHaE8&amp;pid=Api&amp;P=0" id="yui_3_5_1_1_1671109942427_632">
+                <h1 class="card-title pricing-card-title"><small class="text-muted fw-light"><span id=""></span>%</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Humidity is<span id="humidity"></span>%</li>
+                  <li>min temp is<span id="min_temp"></span>%</li>
+                  <li>max temp is<span id="max_temp"></span>%</li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">WINDSPEED</h4>
+              </div>
+              <div class="card-body">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.diTy7Ek1hba0xc8dgOFtNQHaEK&amp;pid=Api&amp;P=0" id="img" style="width: 235px; height: 156.7px;">
+                <h1 class="card-title pricing-card-title"><small class="text-muted fw-light"><span id=""></span>km/hr</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Windspeed is<span id="wind_speed"></span>km/hr</li>
+                  <li>wind_degrees is<span id="wind_degrees"></span></li>
+                  <li>sunrise is<span id="sunrise"></span></li>
+                  <li>sunset is<span id="sunset"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+              
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+    <script src="{% static 'wheatherapp/js/script.js' %}"></script>
+  
+</div>
+  
+  </div>
+
+  <script src="{% static 'weatherapp/js/jquery.js' %}"></script>
+  <script src="{% static 'weatherapp/js/popper.js' %}"></script>
+  <script src="{% static 'weatherapp/js/bootstrap.js' %}"></script>
+  
+</body>
+</html>
+
+    
+</body>
+</html>
